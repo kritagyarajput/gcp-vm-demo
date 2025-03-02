@@ -1,0 +1,5 @@
+gcloud compute instance-groups managed set-autoscaling web-server-group \
+--max-num-replicas 5 \
+--min-num-replicas 1 \
+--target-cpu-utilization 0.5 \
+--cool-down-period 60
